@@ -8,12 +8,12 @@ spring:
       redis:
         # Redis数据库索引（默认为0）
         database: 6
-        # Redis服务器地址
-        host: 150.109.6.243
+        # Redis服务器地址（隐藏）
+        host: 
         # Redis服务器连接端口
         port: 6379
-        # Redis服务器连接密码（默认为空）
-        password: dd12345678
+        # Redis服务器连接密码（隐藏）
+        password: 
         # 连接超时时间
         timeout: 10s
         lettuce:
@@ -31,9 +31,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://150.109.6.243:3306/daily?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-    username: daily
-    password: daily
+    url: （隐藏）
+    username: （隐藏）
+    password: （隐藏）
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*Mapper.xml
   configuration:
@@ -54,7 +54,6 @@ sa-token:
   token-style: uuid
   # 是否输出操作日志
   is-log: true
-  # 配置 Sa-Token 单独使用的 Redis 连接
 
 server:
-  port: 8787
+  port: （隐藏）
